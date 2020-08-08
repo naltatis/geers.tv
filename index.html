@@ -41,12 +41,16 @@
         margin: 0 auto;
         padding: 3rem 1rem;
       }
-      img {
-        width: 43%;
+      picture {
+        display: block;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
         float: right;
         border: 1px solid #666;
         border-radius: 50%;
         margin-top: 5px;
+        margin-left: 5px;
       }
       h1 {
         font-size: 35px;
@@ -73,6 +77,10 @@
         width: 100%;
       }
       @media (max-width: 400px) {
+        picture {
+          width: 150px;
+          height: 150px;
+        }
         dl {
           display: block;
         }
@@ -122,11 +130,18 @@
   <body>
     <div>
       <a href="./michael-geers.jpg">
-        <img
-          src="./michael-geers-150.jpg"
-          srcset="./michael-geers-150.jpg 1x, ./michael-geers-300.jpg 2x"
-          alt="Michael Geers, Software-Developer, Web"
-        />
+        <picture>
+          <source
+            srcset="./michael-geers-150.webp 150w, ./michael-geers-200.webp 200w, ./michael-geers-300.webp 300w, ./michael-geers-400.webp 400w"
+            sizes="(max-width: 400px) 150px, 200px"
+            type="image/webp"
+            alt="Michael Geers, Software Developer, Germany">
+          <img
+            src="./michael-geers-400.jpg"
+            srcset="./michael-geers-150.jpg 150w, ./michael-geers-200.jpg 200w, ./michael-geers-300.jpg 300w, ./michael-geers-400.jpg 400w"
+            sizes="(max-width: 400px) 150px, 200px"
+            alt="Michael Geers, Software Developer, Germany">
+        </picture>
       </a>
       <h1>Michael Geers</h1>
       <h2>Frontend Engineer<br />Osnabrück, Germany</h2>
