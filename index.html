@@ -39,7 +39,7 @@
         min-height: 100%;
       }
       body > div {
-        max-width: 550px;
+        max-width: 800px;
         min-width: 300px;
         margin: 0 auto;
         padding: 3rem 1rem;
@@ -79,6 +79,9 @@
         grid-row-gap: 1.5rem;
         width: 100%;
       }
+      dd {
+        margin-bottom: 2rem;
+      }
       @media (max-width: 400px) {
         picture {
           width: 150px;
@@ -93,11 +96,14 @@
           font-size: 1.3rem;
         }
         dd {
-          margin-bottom: 2.5em;
+          margin-bottom: 4rem;
         }
       }
       p {
-        margin-bottom: 0.75rem;
+        margin-bottom: 2rem;
+      }
+      dd.compact p {
+        margin-bottom: 1rem;
       }
       ul {
         list-style: none;
@@ -200,7 +206,7 @@
         </dd>
 
         <dt>👨‍💻 projects</dt>
-        <dd>
+        <dd class="compact">
           <p><a href="https://evcc.io">evcc.io</a></p>
           <p><a href="https://micro-frontends.org">micro-frontends.org</a></p>
           <p><a href="https://the-tractor.store">the-tractor.store</a></p>
@@ -219,7 +225,7 @@
         </dd>
 
         <dt>🦉 social</dt>
-        <dd>
+        <dd class="compact">
           <p>
             <a rel="me" href="https://mastodon.social/@naltatis"
               >mastodon.social/@naltatis</a
@@ -307,6 +313,21 @@
 
         <dt>👨‍🏫 talks</dt>
         <dd>
+          <p>
+            <strong>
+              Augsburger Linux-Infotag 2023
+              <small>(de)</small>
+            </strong>
+            <br />
+            <a
+              href="https://www.luga.de/static/LIT-2023/talks/open_source_sonne_tanken_wallboxen_mit_evcc_smarter_machen/"
+              >Open Source Sonne tanken - Wallboxen mit evcc smarter machen</a
+            >
+            <a
+              href="https://speakerdeck.com/naltatis/open-source-sonne-tanken-wallboxen-mit-evcc-smarter-machen"
+              >(Slides)</a
+            >
+          </p>
           <p>
             <strong>
               neuland Fachtag, Bremen, Germany 2022
