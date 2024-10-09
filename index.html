@@ -9,133 +9,158 @@
   <link rel="canonical" href="https://geers.tv" />
   <title>Michael Geers, Frontend Engineer, Osnabrück</title>
   <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      @font-face {
-        font-family: "Quicksand";
-        font-display: swap;
-        src: url(/fonts/quicksand-regular.woff2) format("woff2");
-      }
-      @font-face {
-        font-family: "Quicksand";
-        font-weight: bold;
-        font-display: swap;
-        src: url(/fonts/quicksand-bold.woff2) format("woff2");
-      }
-      html {
-        height: 100%;
-      }
-      body {
-        font-family: Quicksand, sans-serif;
-        background: #fafafafa;
-        color: #666;
-        font-size: 18px;
-        line-height: 1.6em;
-        min-height: 100%;
-      }
-      body > div {
-        max-width: 800px;
-        min-width: 300px;
-        margin: 0 auto;
-        padding: 3rem 1rem;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Quicksand";
+      font-display: swap;
+      src: url(/fonts/quicksand-regular.woff2) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Quicksand";
+      font-weight: bold;
+      font-display: swap;
+      src: url(/fonts/quicksand-bold.woff2) format("woff2");
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: Quicksand, sans-serif;
+      background: #fafafafa;
+      color: #666;
+      font-size: 18px;
+      line-height: 1.6em;
+      min-height: 100%;
+    }
+
+    body>div {
+      max-width: 800px;
+      min-width: 300px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+
+    picture {
+      display: block;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      float: right;
+      border: 1px solid #666;
+      border-radius: 50%;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    h1 {
+      font-size: 35px;
+      font-weight: 300;
+      margin-bottom: 0.5em;
+      line-height: 1em;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-row-gap: 1.5rem;
+      width: 100%;
+    }
+
+    dd {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 400px) {
       picture {
-        display: block;
-        overflow: hidden;
-        width: 200px;
-        height: 200px;
-        float: right;
-        border: 1px solid #666;
-        border-radius: 50%;
-        margin-top: 5px;
-        margin-left: 5px;
+        width: 150px;
+        height: 150px;
       }
-      h1 {
-        font-size: 35px;
-        font-weight: 300;
-        margin-bottom: 0.5em;
-        line-height: 1em;
-      }
-      h2 {
-        margin-bottom: 20px;
-        font-size: 20px;
-        font-weight: 400;
-      }
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+
       dl {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-row-gap: 1.5rem;
-        width: 100%;
+        display: block;
       }
-      dd {
-        margin-bottom: 2rem;
-      }
-      @media (max-width: 400px) {
-        picture {
-          width: 150px;
-          height: 150px;
-        }
-        dl {
-          display: block;
-        }
-        dt {
-          font-weight: 600;
-          margin-bottom: 1rem;
-          font-size: 1.3rem;
-        }
-        dd {
-          margin-bottom: 4rem;
-        }
-      }
-      p {
-        margin-bottom: 2rem;
-      }
-      dd.compact p {
-        margin-bottom: 1rem;
-      }
-      ul {
-        list-style: none;
-        margin-bottom: 2em;
-      }
-      ul li {
-        margin-bottom: 0.75em;
-      }
-      em {
-        font-style: normal;
-        text-decoration: underline;
-        text-decoration-color: goldenrod;
-        text-decoration-style: dotted;
-        text-decoration-style: wavy;
-        text-decoration-thickness: 2px;
-      }
-      strong {
+
+      dt {
         font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
       }
-      strong small {
-        font-size: 1em;
-        font-weight: normal;
-        color: #aaa;
+
+      dd {
+        margin-bottom: 4rem;
       }
-      a:hover {
-        text-decoration: underline;
-        text-decoration-color: goldenrod;
-        text-decoration-style: solid;
-        text-decoration-thickness: 2px;
-      }
-      a:hover em {
-        text-decoration: none;
-      }
-    </style>
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    dd.compact p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 2em;
+    }
+
+    ul li {
+      margin-bottom: 0.75em;
+    }
+
+    em {
+      font-style: normal;
+      text-decoration: underline;
+      text-decoration-color: goldenrod;
+      text-decoration-style: dotted;
+      text-decoration-style: wavy;
+      text-decoration-thickness: 2px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    strong small {
+      font-size: 1em;
+      font-weight: normal;
+      color: #aaa;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-decoration-color: goldenrod;
+      text-decoration-style: solid;
+      text-decoration-thickness: 2px;
+    }
+
+    a:hover em {
+      text-decoration: none;
+    }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -230,6 +255,16 @@
 
       <dt>👨‍🏫 talks</dt>
       <dd>
+        <p>
+          <strong>
+            Hey Architect! Conference, Mercedes Benz AG, Remote 2024
+            <small>(en)</small>
+          </strong>
+          <br />
+          <a href="https://speakerdeck.com/naltatis/micro-frontends-true-end-to-end-decoupling-in-practice">Micro
+            Frontends: True
+            End-to-End Decoupling in Practice</a>
+        </p>
         <p>
           <strong>
             Kieler Open Source und Linux Tage (Kielux), Germany 2024
