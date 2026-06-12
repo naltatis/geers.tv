@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="description" content="I'm a frontend engineer from Germany and like to build stuff on the web" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://geers.tv" />
   <title>Michael Geers, Frontend Engineer, Osnabrück</title>
+  <meta property="og:title" content="Michael Geers — Frontend Engineer" />
+  <meta property="og:description" content="I'm a frontend engineer from Germany and like to build stuff on the web" />
+  <meta property="og:url" content="https://geers.tv" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://geers.tv/michael-geers.jpg" />
+  <meta property="og:image:width" content="960" />
+  <meta property="og:image:height" content="960" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/favicon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)" />
   <style>
     * {
       margin: 0;
@@ -28,20 +40,37 @@
       src: url(/fonts/quicksand-bold.woff2) format("woff2");
     }
 
+    :root {
+      color-scheme: light dark;
+      --color-background: #fafafa;
+      --color-text: #666;
+      --color-link: #000;
+      --color-muted: #707070;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #161616;
+        --color-text: #a0a0a0;
+        --color-link: #eee;
+        --color-muted: #8a8a8a;
+      }
+    }
+
     html {
       height: 100%;
     }
 
     body {
       font-family: Quicksand, sans-serif;
-      background: #fafafafa;
-      color: #666;
+      background: var(--color-background);
+      color: var(--color-text);
       font-size: 18px;
       line-height: 1.6em;
       min-height: 100%;
     }
 
-    body>div {
+    body>main {
       max-width: 800px;
       min-width: 300px;
       margin: 0 auto;
@@ -54,7 +83,7 @@
       width: 200px;
       height: 200px;
       float: right;
-      border: 1px solid #666;
+      border: 1px solid var(--color-text);
       border-radius: 50%;
       margin-top: 5px;
       margin-left: 5px;
@@ -74,7 +103,7 @@
     }
 
     a {
-      color: #000;
+      color: var(--color-link);
       text-decoration: none;
     }
 
@@ -147,7 +176,7 @@
     strong small {
       font-size: 1em;
       font-weight: normal;
-      color: #aaa;
+      color: var(--color-muted);
     }
 
     a:hover {
@@ -161,11 +190,10 @@
       text-decoration: none;
     }
   </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-  <div>
+  <main>
     <a href="./michael-geers.jpg">
       <picture>
         <source srcset="
@@ -173,8 +201,7 @@
               ./michael-geers-200.webp 200w,
               ./michael-geers-300.webp 300w,
               ./michael-geers-400.webp 400w
-            " sizes="(max-width: 400px) 150px, 200px" type="image/webp"
-          alt="Michael Geers, Software Developer, Germany" />
+            " sizes="(max-width: 400px) 150px, 200px" type="image/webp" />
         <img src="./michael-geers-400.jpg" srcset="
               ./michael-geers-150.jpg 150w,
               ./michael-geers-200.jpg 200w,
@@ -198,24 +225,15 @@
     </ul>
     <dl>
       <dt>📫 email</dt>
-      <dd>
-        <script type="text/javascript">
-          var x =
-            'function f(x,y){var i,o="",l=x.length;for(i=0;i<l;i++){if(i>(106+y)' +
-            ')y*=2;y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f("\\' +
-            "014\\036\\002\\016\\032\\006\\037\\037R\\025\\\\\\r_\\014\\016\\030\\010[\\" +
-            "025Q\\021=# /ki;\\177&eoekyf#|,}\\177/b~~t|2c2~v~RbMGAdR\\017D\\006\\033\\0" +
-            '30\\005\\014\\023\\034\\010\\030IGFLMO\\023\\004B\\000P\\026\\003S{<!\\"0&' +
-            ".o-`161+!=x8o?ydm>fdj`5psv\\033\\016I^\\034K\\005\\017\\t\\033+\\037D\\004G" +
-            'T\\r\\003\\027\\007\\001\\007\\030W\\027W\\t\\016\\036\\016\\nr*6\\"qR\\02' +
-            '6{<$kflvuye\\026i%,%)<\\"\\1777\\"jj>mn{}ylno<=N9;095?^Z[01\\\\\\\\@-.\\0' +
-            '30@GF+$\\020\\016\' + E[]8/\\016\\"\\\\57>Bb\\016]\\\\1>.b\\"[WEN]]0DCqsjO' +
-            '_uorpiFHO-q{cXSm5./xU\\035qow{1JN22ZR.\\rN\\\\^7<.b\\"636RB\\017M0^Z8,\\01' +
-            '6\\"\\\\65>Bb\\"\\"*`s%Q^npsz{L\\003;+/%5GV^+o&j\\177\\033dmE|\\177V\\03' +
-            "5.z.kzQ=rcnMsQ\\014f,a`wL\\nS?-a%\\tL1?#w%\\014C*{/'g\\025N23.0w\\026\\030i" +
-            'y/%5WEl>o5.\\003\\027(pih%V\\nglcb0FCl.Z,B\\034Co.o.l_\\010{+\\177\\"f\\02' +
-            "6\\030 ligj]\\020ud$'\",106)";
-          while ((x = eval(x)));
+      <dd id="email">
+        <noscript>email: see GitHub profile</noscript>
+        <script>
+          const user = "michael";
+          const host = "geers.tv";
+          const link = document.createElement("a");
+          link.href = "mailto:" + user + "@" + host;
+          link.textContent = user + "@" + host;
+          document.getElementById("email").append(link);
         </script>
       </dd>
 
@@ -604,7 +622,7 @@
         </p>
       </dd>
     </dl>
-  </div>
+  </main>
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -613,6 +631,12 @@
         "jobTitle": "Frontend-Engineer, Software-Developer",
         "name": "Michael Geers",
         "url": "https://geers.tv",
+        "sameAs": [
+          "https://github.com/naltatis",
+          "https://mastodon.social/@naltatis",
+          "https://bsky.app/profile/michael.geers.tv",
+          "https://www.linkedin.com/in/michael-geers/"
+        ],
         "workLocation": {
           "@type": "PostalAddress",
           "addressLocality": "Osnabrück",
